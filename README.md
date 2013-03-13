@@ -5,8 +5,6 @@ It only use only external C-APIs. Not of Ruby core sources.
 
 (and debugger is a fork of ruby-debug(19) that works on 1.9.2 and 1.9.3 and installs easily for rvm/rbenv rubies :)
 
-[![Build Status](https://travis-ci.org/cldwalker/debugger.png?branch=master)](https://travis-ci.org/cldwalker/debugger)
-
 I want to merge original debugger if it has no problem. So debugger2 may be obsolete.
 
 ## Install
