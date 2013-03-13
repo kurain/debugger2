@@ -38,7 +38,9 @@ describe "Kill Command" do
   end
 
   describe "Post Mortem" do
-    it "must work in post-mortem mode" do
+    it "must work in post-mortem mode"
+
+    0.times do
       Process.expects(:kill).with("USR1", Process.pid)
       enter 'cont', 'kill USR1'
       debug_file "post_mortem"

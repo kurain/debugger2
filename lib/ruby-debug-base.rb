@@ -18,7 +18,9 @@ module Debugger
 
     alias __c_frame_binding frame_binding
     def frame_binding(frame)
-      __c_frame_binding(frame) || hbinding(frame)
+      b = __c_frame_binding(frame)
+      return b if b
+      hbinding(frame)
     end
 
     private

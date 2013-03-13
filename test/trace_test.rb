@@ -144,7 +144,9 @@ describe "Trace Command" do
   end
 
   describe "Post Mortem" do
-    it "must work in post-mortem mode" do
+    it "must work in post-mortem mode"
+
+    0.times do
       enter 'cont', 'trace on'
       debug_file 'post_mortem'
       check_output_includes "Tracing on on current thread."

@@ -60,7 +60,9 @@ describe "Method Command" do
 
 
   describe "Post Mortem" do
-    it "must work in post-mortem mode" do
+    it "must work in post-mortem mode"
+
+    0.times do
       enter 'cont', 'm i self'
       debug_file 'post_mortem'
       check_output_includes /to_s/

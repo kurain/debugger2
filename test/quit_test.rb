@@ -45,7 +45,8 @@ describe "Quit Command" do
   end
 
   describe "Post Mortem" do
-    it "must work in post-mortem mode" do
+    it "must work in post-mortem mode"
+    0.times do
       Debugger::QuitCommand.any_instance.expects(:exit!)
       enter 'cont', 'exit!'
       debug_file 'post_mortem'

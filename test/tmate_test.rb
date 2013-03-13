@@ -31,7 +31,9 @@ describe "Tmate Command" do
   end
 
   describe "Post Mortem" do
-    it "must work in post-mortem mode" do
+    it "must work in post-mortem mode"
+
+    0.times do
       Debugger::TextMateCommand.any_instance.expects(:`).with(
         "open 'txmt://open?url=file://#{fullpath('post_mortem')}&line=8'"
       )

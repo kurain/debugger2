@@ -9,10 +9,11 @@ module TestDsl
   def self.included(base)
     base.class_eval do
       extend ClassMethods
-      before do
+
+      #before do
         Debugger.interface = TestInterface.new
         Debugger.handler.display.clear
-      end
+      #end
       after do
         Debugger.handler.display.clear
       end

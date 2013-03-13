@@ -395,7 +395,7 @@ item. If \'verbose\' is given then the entire stack frame is shown.'],
       end
       obj = debug_eval('self')
       locals = @state.context.frame_locals(@state.frame_pos)
-      locals['self'] = @state.context.frame_self(@state.frame_pos)
+      locals[:self] = @state.context.frame_self(@state.frame_pos)
       locals.keys.sort.each do |name|
         next if name =~ /^__dbg_/ # skip debugger pollution
         ### FIXME: make a common routine

@@ -1,4 +1,4 @@
-module Debugger  
+module Debugger
   class Interface # :nodoc:
     attr_writer :have_readline  # true if Readline is available
 

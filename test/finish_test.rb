@@ -38,7 +38,8 @@ describe "Finish Command" do
 
 
   describe "Post Mortem" do
-    it "must not work in post-mortem mode" do
+    it "must not work in post-mortem mode"
+    0.times do
       enter 'cont', 'finish'
       debug_file "post_mortem"
       check_output_includes 'Unknown command: "finish".  Try "help".', interface.error_queue

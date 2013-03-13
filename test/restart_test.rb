@@ -133,7 +133,9 @@ describe "Restart Command" do
 
 
   describe "Post Mortem" do
-    it "must work in post-mortem mode" do
+    it "must work in post-mortem mode"
+
+    0.times do
       must_restart
       enter 'cont', 'restart'
       debug_file 'post_mortem'

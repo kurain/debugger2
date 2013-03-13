@@ -53,7 +53,9 @@ describe "Stepping Commands" do
 
     describe "Post Mortem" do
       temporary_change_hash_value(Debugger::Command.settings, :autoeval, false)
-      it "must not work in post-mortem mode" do
+      it "must not work in post-mortem mode"
+
+      0.times do
         enter 'cont', "next"
         debug_file('post_mortem')
         check_output_includes 'Unknown command: "next".  Try "help".', interface.error_queue
@@ -107,7 +109,9 @@ describe "Stepping Commands" do
 
     describe "Post Mortem" do
       temporary_change_hash_value(Debugger::Command.settings, :autoeval, false)
-      it "must not work in post-mortem mode" do
+      it "must not work in post-mortem mode"
+
+      0.times do
         enter 'cont', "step"
         debug_file('post_mortem')
         check_output_includes 'Unknown command: "step".  Try "help".', interface.error_queue

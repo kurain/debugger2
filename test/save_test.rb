@@ -82,7 +82,9 @@ describe "Save Command" do
   describe "Post Mortem" do
     let(:file_contents) { File.read(file_name) }
     after { FileUtils.rm(file_name) }
-    it "must work in post-mortem mode" do
+    it "must work in post-mortem mode"
+
+    0.times do
       enter 'cont', "save #{file_name}"
       debug_file 'post_mortem'
       file_contents.must_include "set autoirb off"

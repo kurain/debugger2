@@ -4,7 +4,7 @@ class CatchExample
   def a
     begin
       Debugger.post_mortem do
-        z = 4
+z = 100
         raise 'blabla'
         x = 6
       end

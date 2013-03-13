@@ -65,9 +65,10 @@ describe "Conditions" do
     end
   end
 
-
   describe "Post Mortem" do
-    it "must be able to set conditions in post-mortem mode" do
+    it "must be able to set conditions in post-mortem mode"
+
+    0.times do
       enter 'cont', 'break 12', ->{"cond #{breakpoint.id} true"}, 'cont'
       debug_file("post_mortem") { state.line.must_equal 12 }
     end
