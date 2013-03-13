@@ -1,11 +1,12 @@
 ## Description
-debugger2 is a fork of debugger for Ruby 2.0.
 
-It only use only external C-APIs. Not of Ruby core sources.
+debugger2 is a fork of [debugger] (https://github.com/cldwalker/debugger) for Ruby 2.0.
+
+It uses only external C-APIs. Not of Ruby core sources.
 
 (and debugger is a fork of ruby-debug(19) that works on 1.9.2 and 1.9.3 and installs easily for rvm/rbenv rubies :)
 
-I want to merge original debugger if it has no problem. So debugger2 may be obsolete.
+I want to merge original debugger if it has no problem. So debugger2 may be obsolete. Feel free to give us your comments.
 
 ## Install
 
@@ -73,6 +74,14 @@ Please report them [on github](http://github.com/ko1/debugger2/issues).
 ## Credits
 
 All ruby's debugger programmers.
+
+Quote from [original README.md] (https://github.com/cldwalker/debugger/blob/master/README.md).
+
+* Thanks to the original authors: Kent Sibilev and Mark Moseley
+* Thanks to astashov for bringing in a new and improved test suite and various bug fixes.
+* Thanks to windwiny for porting to 2.0.0
+* Contributors: ericpromislow, jnimety, adammck, hipe, FooBarWidget, aghull
+* Fork started on awesome @relevance fridays!
 
 ## TODO
 
