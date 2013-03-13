@@ -5,9 +5,9 @@ require File.dirname(__FILE__) + "/lib/debugger/version"
 Gem::Specification.new do |s|
   s.name = %q{debugger}
   s.version = Debugger::VERSION
-  s.authors = ["Kent Sibilev", "Mark Moseley", "Gabriel Horner"]
-  s.email = "gabriel.horner@gmail.com"
-  s.homepage = "http://github.com/cldwalker/debugger"
+  s.authors = ['Koichi Sasada']
+  s.email = "ko1@atdot.net"
+  s.homepage = "https://github.com/ko1/debugger2"
   s.summary = %q{Fast Ruby debugger - base + cli}
   s.description = %q{debugger is a fast implementation of the standard Ruby debugger debug.rb.
 It is implemented by utilizing a new Ruby C API hook. The core component

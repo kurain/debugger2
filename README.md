@@ -1,5 +1,5 @@
 ## Description
-A fork of debugger for Ruby 2.0.
+debugger2 is a fork of debugger for Ruby 2.0.
 
 It only use only external C-APIs. Not of Ruby core sources.
 
@@ -7,7 +7,7 @@ It only use only external C-APIs. Not of Ruby core sources.
 
 [![Build Status](https://travis-ci.org/cldwalker/debugger.png?branch=master)](https://travis-ci.org/cldwalker/debugger)
 
-I want to merge original debugger if it has no problem.
+I want to merge original debugger if it has no problem. So debugger2 may be obsolete.
 
 ## Install
 
