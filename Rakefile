@@ -33,7 +33,7 @@ file "emacs/rdebug.elc" => ["emacs/elisp-comp", "emacs/rdebug.el"] do
   end
 end
 
-base_spec = eval(File.read('debugger.gemspec'), binding, 'debugger.gemspec')
+base_spec = eval(File.read('debugger2.gemspec'), binding, 'debugger2.gemspec')
 # Rake task to build the default package
 Gem::PackageTask.new(base_spec) do |pkg|
   pkg.need_tar = true
