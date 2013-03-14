@@ -5,7 +5,7 @@ require File.dirname(__FILE__) + "/lib/debugger/version"
 Gem::Specification.new do |s|
   s.name = %q{debugger2}
   s.version = Debugger::VERSION
-  s.authors = ['Koichi Sasada']
+  s.authors = ['Koichi Sasada', "Kent Sibilev", "Mark Moseley", "Gabriel Horner"]
   s.email = "ko1@atdot.net"
   s.homepage = "https://github.com/ko1/debugger2"
   s.summary = %q{Fast Ruby debugger - base + cli}
