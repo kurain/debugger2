@@ -100,6 +100,8 @@ Quote from [original README.md] (https://github.com/cldwalker/debugger/blob/mast
 * Contributors: ericpromislow, jnimety, adammck, hipe, FooBarWidget, aghull
 * Fork started on awesome @relevance fridays!
 
+And I want to say thank you to Asakusa.rb members. They tell me a lot of things, such as how to use github, and so on :).
+
 ## TODO
 
 * Collect feedback.
