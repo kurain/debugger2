@@ -1,4 +1,3 @@
-p 'loading debugger2...'
 module Debugger
 end
 
