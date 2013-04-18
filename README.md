@@ -26,7 +26,7 @@ Build the gem package and install it:
 
 ```shell
 gem build debugger2.gemspec
-gem install debugger-1.0.0.gem
+gem install debugger2*.gem
 ```
 
 ## Supported Rubies
