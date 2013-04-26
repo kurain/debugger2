@@ -10,7 +10,7 @@ SO_NAME = "ruby_debug.so"
 desc "Run new MiniTest tests."
 task :test do
   Rake::TestTask.new(:test) do |t|
-    t.test_files = FileList["test/*_test.rb"]
+    t.test_files = FileList["test/*_test.rb"].delete_if{|f| f == "test/thread_test.rb"}
     t.verbose = true
   end
 end
