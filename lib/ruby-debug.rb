@@ -4,6 +4,7 @@ require 'socket'
 require 'thread'
 require 'ruby-debug-base'
 require 'ruby-debug/processor'
+require 'purerb_debug'
 
 module Debugger
   self.handler = CommandProcessor.new

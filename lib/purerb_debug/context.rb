@@ -20,7 +20,7 @@ class DebugContext
     :breakpoint, :inspected_frame
 
   def dump(set, flag)
-    printf $stderr, "[CTX %s:%d] %s %s\n", __FILE__, __LINE__, set ? "set" : "unset", self.flag_name(f)
+    printf $stderr, "[CTX %s:%d] %s %s\n", __FILE__, __LINE__, set ? "set" : "unset", self.flag_name(flag)
   end
 
   def flag_name(flag)
@@ -42,7 +42,7 @@ class DebugContext
   end
 
   def flag_test(flag)
-    @flags & flag
+    (@flags & flag) != 0
   end
   def flag_set(flag)
     self.dump(1, flag)
@@ -51,6 +51,6 @@ class DebugContext
 
   def flag_unset(flag)
     self.dump(0, flag)
-    @flags |= flag
+    @flags &= ~flag
   end
 end
